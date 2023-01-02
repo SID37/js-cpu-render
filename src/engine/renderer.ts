@@ -61,24 +61,6 @@ class Interpolate {
 		this.ny = (B.ny - A.ny) * mult;
 		this.nz = (B.nz - A.nz) * mult;
 	}
-
-	public add(inter: Interpolate) {
-		this.z = this.z + inter.z;
-		this.u = this.u + inter.u;
-		this.v = this.v + inter.v;
-		this.nx = this.nx + inter.nx;
-		this.ny = this.ny + inter.ny;
-		this.nz = this.nz + inter.nz;
-	}
-
-	public copy(inter: Interpolate) {
-		this.z = inter.z;
-		this.u = inter.u;
-		this.v = inter.v;
-		this.nx = inter.nx;
-		this.ny = inter.ny;
-		this.nz = inter.nz;
-	}
 }
 
 export class PhongLight {

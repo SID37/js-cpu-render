@@ -21,8 +21,6 @@ export class Matrix {
 	}
 
 	public static RotateX(sin: number, cos: number) {
-		cos = (cos);
-		sin = (sin);
 		return new Matrix([
 			1,  0, 0, 0,
 			0,  cos, sin, 0,
@@ -32,8 +30,6 @@ export class Matrix {
 	}
 
 	public static RotateY(sin: number, cos: number) {
-		cos = (cos);
-		sin = (sin);
 		return new Matrix([
 			cos, 0, -sin, 0,
 			0,   1,  0,   0,
@@ -43,8 +39,6 @@ export class Matrix {
 	}
 
 	public static RotateZ(sin: number, cos: number) {
-		cos = (cos);
-		sin = (sin);
 		return new Matrix([
 			 cos, sin, 0, 0,
 			-sin, cos, 0, 0,
@@ -66,9 +60,6 @@ export class Matrix {
 	}
 
 	public static Move(x: number, y: number, z: number) {
-		x = (x);
-		y = (y);
-		z = (z);
 		return new Matrix([
 			1, 0, 0, 0,
 			0, 1, 0, 0,
@@ -78,9 +69,6 @@ export class Matrix {
 	}
 
 	public static Scale(x: number, y: number, z: number) {
-		x = (x);
-		y = (y);
-		z = (z);
 		return new Matrix([
 			x, 0, 0, 0,
 			0, y, 0, 0,
