@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "watch": "parcel index.html",
-    "build": "parcel build index.html --no-source-maps",
+    "build": "parcel build index.html --no-source-maps --public-url ./",
     "profile-build": "tsc profile/profile.ts --target es6 --module es6 -outDir profile-out/temp/",
     "profile-pack": "node pack.js profile-out/temp/ profile-out/profile.js",
     "profile-run": "d8.exe --log-all profile-out/profile.js",
